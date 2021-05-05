@@ -3,7 +3,7 @@ function path = gradient_descent(grad_f, r_0, lambda_0, delta, tolerance, max_st
 % tactics
 
 r_i = r_0;
-grad_i = grad_f(r_i(1), r_i(2));
+grad_i = -grad_f(r_i(1), r_i(2));
 grad_i = grad_i(:)';
 n = 0;
 lambda = lambda_0;
