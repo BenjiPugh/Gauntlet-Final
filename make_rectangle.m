@@ -1,8 +1,8 @@
 function [potential_func, grad_func] = make_rectangle(width, height, center_point, angle, point_spacing)
     % create potential and gradient functions for a general rectangle
     points = [-width/2 -height/2;
-               width/2  height/2;
               -width/2  height/2;
+               width/2  height/2;
                width/2 -height/2];
     points_rotated = points * [cos(angle), -sin(angle); sin(angle), cos(angle)]' + center_point;
     
