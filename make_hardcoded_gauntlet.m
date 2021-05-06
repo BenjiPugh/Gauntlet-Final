@@ -3,7 +3,7 @@ function [potential_func, grad_func] = make_hardcoded_gauntlet(point_spacing, bo
 % challenge
 
     % create walls
-    [w_pot, w_grad] = make_rectangle(4, 4.37, [0.5, -1.185], 0, point_spacing);
+    [w_pot, w_grad] = make_rectangle(4, 4.37, [0.5, -1.185], 0, point_spacing/3);
     % create box 1
     [s1_pot, s1_grad] = make_square(0.5, [1.41, -2], 0, point_spacing);
     % create box 2
